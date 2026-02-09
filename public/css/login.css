@@ -55,14 +55,45 @@ label {
     margin-bottom: 8px;
 }
 
+.password-input-wrapper {
+    position: relative;
+}
+
 input[type="email"],
-input[type="password"] {
+input[type="password"],
+input[type="text"] {
     width: 100%;
     padding: 12px 15px;
+    padding-right: 45px;
     border: 1px solid #ddd;
     border-radius: 5px;
     font-size: 14px;
     transition: border-color 0.3s;
+}
+
+.toggle-password {
+    position: absolute;
+    right: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+    background: none;
+    border: none;
+    cursor: pointer;
+    padding: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #666;
+    transition: color 0.3s;
+}
+
+.toggle-password:hover {
+    color: #667eea;
+}
+
+.eye-icon {
+    width: 20px;
+    height: 20px;
 }
 
 input[type="email"]:focus,
