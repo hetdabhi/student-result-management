@@ -1,0 +1,12 @@
+{
+  "name": "admin-scripts",
+  "version": "1.0.0",
+  "description": "Admin scripts for Student Result Management System",
+  "main": "set-admin-claims.js",
+  "scripts": {
+    "set-admin": "node set-admin-claims.js"
+  },
+  "dependencies": {
+    "firebase-admin": "^12.0.0"
+  }
+}

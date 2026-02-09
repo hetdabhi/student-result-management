@@ -1,0 +1,89 @@
+{
+  "admin": {
+    "email": "admin@institute.edu",
+    "password": "Admin@123",
+    "role": "admin",
+    "name": "System Administrator",
+    "note": "This is the admin account for managing student results"
+  },
+  "students": [
+    {
+      "email": "john.doe@example.com",
+      "password": "Student@123",
+      "role": "student",
+      "studentId": "S001",
+      "name": "John Doe"
+    },
+    {
+      "email": "jane.smith@example.com",
+      "password": "Student@123",
+      "role": "student",
+      "studentId": "S002",
+      "name": "Jane Smith"
+    },
+    {
+      "email": "michael.j@example.com",
+      "password": "Student@123",
+      "role": "student",
+      "studentId": "S003",
+      "name": "Michael Johnson"
+    },
+    {
+      "email": "emily.davis@example.com",
+      "password": "Student@123",
+      "role": "student",
+      "studentId": "S004",
+      "name": "Emily Davis"
+    },
+    {
+      "email": "david.wilson@example.com",
+      "password": "Student@123",
+      "role": "student",
+      "studentId": "S005",
+      "name": "David Wilson"
+    },
+    {
+      "email": "sarah.brown@example.com",
+      "password": "Student@123",
+      "role": "student",
+      "studentId": "S006",
+      "name": "Sarah Brown"
+    },
+    {
+      "email": "james.m@example.com",
+      "password": "Student@123",
+      "role": "student",
+      "studentId": "S007",
+      "name": "James Martinez"
+    },
+    {
+      "email": "lisa.anderson@example.com",
+      "password": "Student@123",
+      "role": "student",
+      "studentId": "S008",
+      "name": "Lisa Anderson"
+    },
+    {
+      "email": "robert.t@example.com",
+      "password": "Student@123",
+      "role": "student",
+      "studentId": "S009",
+      "name": "Robert Taylor"
+    },
+    {
+      "email": "jennifer.lee@example.com",
+      "password": "Student@123",
+      "role": "student",
+      "studentId": "S010",
+      "name": "Jennifer Lee"
+    }
+  ],
+  "instructions": {
+    "step1": "Create these users in Firebase Authentication",
+    "step2": "Set custom claims for admin user: { role: 'admin' }",
+    "step3": "Set custom claims for student users: { role: 'student' }",
+    "step4": "Create corresponding documents in Firestore 'users' collection",
+    "step5": "Use the provided script or Firebase Console to import users",
+    "note": "Change passwords after initial setup for security"
+  }
+}

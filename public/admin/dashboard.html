@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin Dashboard - Student Result Management</title>
+    <link rel="stylesheet" href="../css/admin-dashboard.css">
+</head>
+
+<body>
+    <div class="dashboard-container">
+        <!-- Header -->
+        <header class="dashboard-header">
+            <div class="header-content">
+                <h1>Admin Dashboard</h1>
+                <div class="header-actions">
+                    <span id="adminName" class="admin-name">Admin</span>
+                    <button id="logoutBtn" class="logout-btn">Logout</button>
+                </div>
+            </div>
+        </header>
+
+        <!-- Main Content -->
+        <main class="dashboard-main">
+            <!-- Upload Section -->
+            <section class="upload-section">
+                <h2>Upload Student Results</h2>
+                <div class="upload-area" id="uploadArea">
+                    <div class="upload-icon">📁</div>
+                    <p class="upload-text">Drag and drop CSV file here or click to browse</p>
+                    <input type="file" id="csvFileInput" accept=".csv" hidden>
+                    <button id="browseBtn" class="browse-btn">Browse Files</button>
+                </div>
+
+                <!-- Progress Indicator -->
+                <div id="uploadProgress" class="upload-progress" style="display: none;">
+                    <div class="progress-bar">
+                        <div id="progressFill" class="progress-fill"></div>
+                    </div>
+                    <p id="progressText" class="progress-text">Uploading...</p>
+                </div>
+
+                <!-- Message Container -->
+                <div id="messageContainer" class="message-container"></div>
+            </section>
+
+            <!-- Results Table Section -->
+            <section class="results-section">
+                <div class="section-header">
+                    <h2>Uploaded Results</h2>
+                    <button id="refreshBtn" class="refresh-btn">Refresh</button>
+                </div>
+
+                <div class="table-container">
+                    <table id="resultsTable" class="results-table">
+                        <thead>
+                            <tr>
+                                <th>Student ID</th>
+                                <th>Name</th>
+                                <th>Course</th>
+                                <th>Semester</th>
+                                <th>Total Marks</th>
+                                <th>Status</th>
+                                <th>Uploaded</th>
+                            </tr>
+                        </thead>
+                        <tbody id="resultsTableBody">
+                            <tr>
+                                <td colspan="7" class="no-data">No results uploaded yet</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </section>
+
+            <!-- CSV Format Guide -->
+            <section class="guide-section">
+                <h3>CSV Format Guide</h3>
+                <div class="guide-content">
+                    <p><strong>Required columns:</strong> StudentID, Name, Email, Course, Semester, Subject columns</p>
+                    <p><strong>Example:</strong></p>
+                    <code>StudentID,Name,Email,Course,Semester,Math,Physics,Chemistry<br>
+S001,John Doe,john@example.com,Computer Science,Fall 2024,85,90,78</code>
+                    <button id="downloadTemplateBtn" class="template-btn">Download Template</button>
+                </div>
+            </section>
+        </main>
+    </div>
+
+    <script type="module" src="../js/firebase-config.js"></script>
+    <script type="module" src="../js/admin/dashboard.js"></script>
+</body>
+
+</html>

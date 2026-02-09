@@ -1,0 +1,29 @@
+{
+  "name": "student-result-management",
+  "version": "1.0.0",
+  "description": "A secure web application for managing student results with role-based access control",
+  "main": "index.js",
+  "scripts": {
+    "test": "jest",
+    "test:watch": "jest --watch",
+    "serve": "firebase serve",
+    "deploy": "firebase deploy"
+  },
+  "keywords": [
+    "student",
+    "results",
+    "firebase",
+    "education"
+  ],
+  "author": "",
+  "license": "MIT",
+  "devDependencies": {
+    "@firebase/rules-unit-testing": "^3.0.0",
+    "fast-check": "^3.15.0",
+    "jest": "^29.7.0",
+    "jest-environment-jsdom": "^29.7.0"
+  },
+  "dependencies": {
+    "firebase": "^10.8.0"
+  }
+}

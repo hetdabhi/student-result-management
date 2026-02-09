@@ -1,0 +1,38 @@
+# Dependencies
+node_modules/
+package-lock.json
+
+# Firebase
+.firebase/
+.firebaserc
+firebase-debug.log
+firestore-debug.log
+
+# Environment variables
+.env
+.env.local
+
+# Service account keys
+scripts/serviceAccountKey.json
+**/serviceAccountKey.json
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Build
+dist/
+build/
+
+# Test coverage
+coverage/
+
+# Logs
+*.log
+npm-debug.log*
